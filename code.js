@@ -8,7 +8,11 @@ const helloWorld = function () {
 }
 
 function sayHello(input){
+    if (typeof input == "string"){
     return "Hello, " + input + "!";
+    } else {
+        return "Hello, World!";
+    }
     // if (input === "Alex"){
     //     return "Hello, Alex!";
     // } else if (input === "Jane"){
