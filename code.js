@@ -1,4 +1,5 @@
-// helloWorld function 
+"use strict";
+// helloWorld function
 // function helloWorld() {
 //     return "Hello, World!";
 // }
@@ -28,16 +29,12 @@ function isFive(input){
     if(input === 5 || input === "5"){
         return 5;
     }else{
-    return typeof input === "boolean";
+    return false;
     }
 }
 
 function isEven(input) {
-    if (input % 2 == 0){
-        return true;
-    } else {
-        return false;
-    }
+    return input % 2 == 0;
 }
     // if (input === 2 || input === -4 || input === "8") {
     //     return true;
@@ -47,3 +44,25 @@ function isEven(input) {
     //             return typeof input === "boolean";
     //         }
     //     }
+
+// function isVowel(input){
+//     if (input === "a" || input === "A"){
+//         return true;}
+//     if (input === "y" || input === 4 || typeof input === "boolean"){
+//         return false;
+//     } else {
+//     return typeof input === "boolean";
+//     }
+// }
+
+function isVowel(input) {
+    if (typeof input === "string"){
+        input = input.toLowerCase();
+        if (input === `a` || input === `e` || input === `i` || input === `o` || input === `u`){
+            return true;
+        }
+    }
+    return false;
+}
+
+
