@@ -23,3 +23,11 @@ function sayHello(input){
     //     return input;
     // }
 }
+
+function isFive(input){
+    if(input === 5 || input === "5"){
+        return 5;
+    }else{
+    return typeof input === "boolean";
+    }
+}
