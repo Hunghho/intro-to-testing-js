@@ -31,3 +31,19 @@ function isFive(input){
     return typeof input === "boolean";
     }
 }
+
+function isEven(input) {
+    if (input % 2 == 0){
+        return true;
+    } else {
+        return false;
+    }
+}
+    // if (input === 2 || input === -4 || input === "8") {
+    //     return true;
+    // } if (input === 3 || input === "banana" || input === Infinity || typeof input === "boolean") {
+    //             return false;
+    //         } else {
+    //             return typeof input === "boolean";
+    //         }
+    //     }
